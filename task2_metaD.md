@@ -6,7 +6,7 @@ Now that we've run some simple MD, let us move on to the main task for this tuto
 
 Like in the previous task, we have a configuration file `init.xyz` and our ase file `mace.py`. Looking at the latter, you should see some noticeable changes to the code. The code below gives the PLUMED input needed to perform our enhanced sampling:
 
-```
+```python
 setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY={units.mol/units.kcal}",
           "t1: TORSION ATOMS=1,6,4,5",
           "t2: TORSION ATOMS=2,3,4,5",
