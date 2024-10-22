@@ -14,7 +14,4 @@ setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY={units.mol/units.kcal}",
                 " BIASFACTOR=10 TEMP=300",
           "PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR"]
 ```
-Line 1 gives the units used by PLUMED. Lines 2 and 3 define the collective variables (torsion) that we will use to probe the conformation change. Line 4 is used to define the parameters used in running metadynamics, including gaussian heights, widths, and the rate at which they are deposited. 
-
-
-This block contains the input parameters for our umbrella sampling run. 
+Line 1 gives the units used by PLUMED. Lines 2 and 3 define the collective variables (torsion) that we will use to probe the conformation change. Line 4 is used to define the parameters used in running metadynamics, including gaussian heights, widths, and the rate at which they are deposited. Line 5 tells us to print the important collective variable information. 
