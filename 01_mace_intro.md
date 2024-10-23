@@ -4,4 +4,4 @@ Over the last two decades, a drastic change has emerged in the way we simulate a
 
 At the forefront of MLP development is the multi atomic cluster expansion (MACE) potential [ref]. Developed in 2022, this potential combines a complete high body order polynomial basis with a message-passing tensor network to enable faithful representations of local chemical envionrments and to accurately reproduce rerference *ab initio* energies and forces. 
 
-<img src="./img/mace.png" alt="drawing" width="600"/>
+<img src="./img/mace.png" alt="drawing" width="400"/>
