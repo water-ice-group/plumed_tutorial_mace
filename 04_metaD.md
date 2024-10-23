@@ -15,3 +15,17 @@ setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY={units.mol/units.kcal}",
           "PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR"]
 ```
 Line 1 gives the units used by PLUMED. Lines 2 and 3 define the collective variables (torsion) that we will use to probe the conformation change. Line 4 is used to define the parameters used in running metadynamics, including gaussian heights, widths, and the rate at which they are deposited. Line 5 tells us to print the important collective variable information. 
+
+For this system, we differentiate between our three conformers using two torsional collective variables, $\phi$ and $\theta$, corresponding to the H1-O2-C-O1 and H2-O3-C-O1 dihedrals. 
+
+Calling PLUMED during the run is achieved by the following block:
+```python
+init_conf.calc = Plumed(calc=calculator,
+                    input=setup,
+                    timestep=timestep,
+                    atoms=init_conf,
+                    kT=0.6)
+```
+where we define the MACE calculator, PLUMED input, the starting configuration, timestep, and *kT*. 
+
+Run the simulation using `python mace.py`. Notice that two additional files will now be output alongside a trajecotry and a log file. The `COLVAR` file gives details on the values of the two collective variable at each timestep. `HILLS` records the gaussians deposited at eaech step; this will be important for reconstructing the potential energy surface later. 
