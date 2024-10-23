@@ -1,11 +1,11 @@
 # Interfacing MACE with Enhanced Sampling
 
-In this tutorial, we run through how to link up the recently developed MACE potential with PLUMED to perform enhanced sampling simulations in the form of two-dimensional metadynamics. Our test system is a molecule of carbonic acid (H2CO3) dissolved in water under ambient conditions. This tutorial will probe the various conformations carbonic acid can adopt and establish which are the most stable. 
+In this tutorial, we will learn how to link up the recently developed MACE potential with PLUMED to perform enhanced sampling simulations in the form of two-dimensional metadynamics. Our test system is a molecule of carbonic acid (H2CO3) dissolved in water under ambient conditions. This tutorial will probe the various conformations carbonic acid can adopt and establish which are the most stable. 
 
-We specifically run though:
+We specifically cover:
 - Navigating the MACE-LAMMPS-PLUMED interface.
 - Setting up your work environment.  
-- Running simple MD using a MACE potential. 
+- Running simple MD simulations using a MACE potential. 
 - Performing metadynamics using two collective variables.
 
 
