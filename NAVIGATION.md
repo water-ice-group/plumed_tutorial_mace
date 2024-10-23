@@ -4,6 +4,9 @@ In this tutorial, we will learn how to link up the recently developed MACE poten
 
 Cabronic acid in water is important for carbon dioxide solvation chemistry, relating to processes like ocean acidification and the bicarbonate buffer system. The acid has two terminal OH groups that can either be in cis or trans orientation, giving rise to three conformers, cis-cis, cis-trans, and trans-trans as shown below.
 
+<img src="./img/conformers.png" alt="drawing" width="600"/>
+
+
 We specifically cover:
 - Navigating the MACE-LAMMPS-PLUMED interface.
 - Setting up your work environment.  
