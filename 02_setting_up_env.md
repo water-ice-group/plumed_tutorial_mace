@@ -20,6 +20,6 @@ conda install -c conda-forge py-plumed
 pip install mace-torch
 ```
 
-And that's it. When performing the tutorial tasks, always ensure to active the virtual environment: `conda activate plumed_mace`. 
+And that's it. When performing the tutorial tasks, always ensure to activate the virtual environment: `conda activate plumed_mace`. 
 
 
