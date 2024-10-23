@@ -34,4 +34,6 @@ We can use `COLVAR` to build up a picture of what is happening as the metadynami
 
 Following the completion of the simulation, we can now look to extract a potential energy surface for the conformational changes of carbonic acid. Copy `HILLS` to a new directory. Make sure to source your installed version of PLUMED and type `plumed sum_hills --hills HILLS --kt 0.6`. This will add up the deposited gaussians and output thte file `fes.dat`. Use this file to plot the 2D energy surface for our molecule. We have provided scripts for you to do this, though we encourage you to try coding this yourself. You should see profile that looks something like this:
 
+![image](./img/conf_free_energy.png)
 
+We can see four basins on this profile. Are you able to identify which basin corresponds to which conformer? What is the most stable conformer? Can we provide a chemical rationale for these relative stabilities? 
