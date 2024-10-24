@@ -20,8 +20,6 @@ calculator = MACECalculator(model_paths='../model/co2-h2o_swa.model', device='cp
 
 # B - load the initial configuration
 init_conf = read('init.xyz', '0')
-init_conf.pbc = True
-init_conf.cell = [12.42, 12.42, 12.42]
 init_conf.set_calculator(calculator)
 
 # C - set dynamics variables
