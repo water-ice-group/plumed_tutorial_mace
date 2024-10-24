@@ -16,22 +16,19 @@ ps = 1000*units.fs
 
 calculator = MACECalculator(model_paths='../../model/co2-h2o_swa.model', device='cpu')
 
-setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY={units.mol/units.kcal}",
+setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY=eV",
           "t1: TORSION ATOMS=1,6,4,5",
           "t2: TORSION ATOMS=2,3,4,5",
-          "mtd: METAD ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.6 PACE=100 FILE=HILLS" +
+          "mtd: METAD ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.013 PACE=100 FILE=HILLS" +
                 " BIASFACTOR=5 TEMP=300",
           "PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR"]
 
 init_conf = read('init.xyz', '0')
-init_conf.pbc = True
-init_conf.cell = [12.42, 12.42, 12.42]
-
 init_conf.calc = Plumed(calc=calculator,
                     input=setup,
                     timestep=timestep,
                     atoms=init_conf,
-                    kT=0.6)
+                    kT=0.02585)
 
 dyn = Langevin(init_conf, 0.5*units.fs, temperature_K=300, friction=5e-2)
 def write_frame():
