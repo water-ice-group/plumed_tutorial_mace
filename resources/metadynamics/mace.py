@@ -24,6 +24,7 @@ setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY=eV",
           "PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR"]
 
 init_conf = read('init.xyz', '0')
+
 init_conf.calc = Plumed(calc=calculator,
                     input=setup,
                     timestep=timestep,
@@ -37,5 +38,5 @@ dyn.attach(write_frame, interval=500)
 dyn.attach(MDLogger(dyn, init_conf, 'md.log', header=True, stress=False,
                            peratom=True, mode="a"), interval=1)
 
-dyn.run(2000000)
+dyn.run(1000000)
 print("MD finished! Congratulations!")
