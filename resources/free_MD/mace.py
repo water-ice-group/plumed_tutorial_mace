@@ -12,8 +12,6 @@ from mace.calculators import MACECalculator
 calculator = MACECalculator(model_paths='../model/co2-h2o_swa.model', device='cpu')
 
 init_conf = read('init.xyz', '0')
-init_conf.pbc = True
-init_conf.cell = [12.42, 12.42, 12.42]
 init_conf.set_calculator(calculator)
 
 MaxwellBoltzmannDistribution(init_conf, temperature_K=300)
