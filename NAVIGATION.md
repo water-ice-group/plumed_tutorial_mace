@@ -23,6 +23,10 @@ This tutorial is organised as follows:
 ```mermaid
 flowchart TD
   A[Introduction to MACE] ==> B[Setting up your environment];
-  B ==> D[Running Free MD]
-  D ==> F[Metadynamics];
+  B ==> C[Running Free MD]
+  C ==> D[Metadynamics];
+  click A "01_mace_intro.md" "Learn about the MACE potential for performing accurate and efficient molecular dynamics simulations"
+  click B "02_setting_up_env.md" "Understand how to set up the MACE-ASE-PLUMED interface."
+  click C "03_freeMD.md" "Run simple MD using MACE and ASE."
+  click D "04_metaD.md" "Perform metadynamics using MACE to look at conformational stability."
 ```
