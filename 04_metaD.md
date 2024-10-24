@@ -41,4 +41,4 @@ Following the completion of the simulation, we can look to extract a potential e
 
 <img src="./img/conf_free_energy.png" alt="drawing" width="600"/>
 
-We can see four basins on this profile. Are you able to identify which basin corresponds to which conformer? What is the most stable conformer? Can we provide a chemical rationale for these relative stabilities? 
+We can see four basins on this profile (if there are fewer than four on your profile, try running the simulations for longer). Are you able to identify which basin corresponds to which conformer? What is the most stable conformer? Can we provide a chemical rationale for these relative stabilities? 
