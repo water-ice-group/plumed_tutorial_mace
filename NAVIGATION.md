@@ -7,7 +7,7 @@ Carbonic acid is important for carbon dioxide solvation chemistry, relating to p
 <img src="./img/conformers.png" alt="drawing" width="600"/>
 
 
-In this tutorial, we shall cover:
+In this tutorial, we will cover:
 - Navigating the MACE-LAMMPS-PLUMED interface.
 - Setting up your work environment.  
 - Running simple MD simulations using a MACE potential. 
@@ -18,7 +18,7 @@ By the end of this tutorial you should:
 - Know how to run simple MD powered by MACE potentials.
 - Integrate MACE with PLUMED to enable the accurate determination of free energy surfaces. 
 
-This tutorial is organised as follows:
+This tutorial is organized as follows:
 
 ```mermaid
 flowchart TD
@@ -28,5 +28,5 @@ flowchart TD
   click A "01_mace_intro.md" "Learn about the MACE potential for performing accurate and efficient molecular dynamics simulations"
   click B "02_setting_up_env.md" "Understand how to set up the MACE-ASE-PLUMED interface."
   click C "03_freeMD.md" "Run simple MD using MACE and ASE."
-  click D "04_metaD.md" "Perform metadynamics using MACE to look at conformational stability."
+  click D "04_metaD.md" "Perform metadynamics using MACE to examine conformational stability."
 ```
