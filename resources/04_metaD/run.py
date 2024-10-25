@@ -14,7 +14,7 @@ from ase.calculators.plumed import Plumed
 timestep = 0.0005
 ps = 1000*units.fs
 
-calculator = MACECalculator(model_paths='../../model/co2-h2o_swa.model', device='cpu')
+calculator = MACECalculator(model_paths='../model/co2-h2o_swa.model', device='cpu')
 
 setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY=eV",
           "t1: TORSION ATOMS=1,6,4,5",
