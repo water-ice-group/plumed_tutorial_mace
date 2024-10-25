@@ -2,7 +2,7 @@
 
 Having now set up your MACE-ASE-PLUMED environment, let's start running some MD. 
 
-Open the file `mace.py`. You should see the following code:
+Open the file `run.py`. You should see the following code:
 
 ```python
 from ase import units
@@ -40,4 +40,4 @@ print("MD finished! Congratulations!")
 
 In the above script, we first import the necessary modules to run our MD. In section A, we define the calculator for this simulation, i.e., the MACE model that will calculate the forces and energies needed to propagate the system. Ensure that `model_paths` always directs to the model location. In section B, we load the initial configuration for our gaseous molecule and attach the calculator defined in A. In C, we set the initial distribution of velocities and define the integrator needed to perform dynamics. In our case, we opt for a Maxwell Boltzmann distribution of initial momenta. Our _NVT_ simulations are run using Langevin dynamics, meaning that each atom is coupled to a heat bath through use of both a force and friction term. Section D dictates the nature of the nature of the output and its frequency, while in E we set the whole thing going. 
 
-Now, once you have familiarised yourself with the `mace.py` file, run the following command: `python mace.py`. This will start the simulation. You should notice an output file `traj.xyz`, which contains the coordinates of the generated trajectory. Software like VMD can be used to visualise this trajectory. The file `md.log` should also appear, containing the time, temperature, energy, etc. of each step. You can use the python file provided to visualise these properties as a function of time. Running this simulation should require no more than a minute or so of computational time, though you are free to increase the number of steps if you would like to acquire more statistics. 
+Now, once you have familiarised yourself with the `run.py` file, run the following command: `python run.py`. This will start the simulation. You should notice an output file `traj.xyz`, which contains the coordinates of the generated trajectory. Software like VMD can be used to visualise this trajectory. The file `md.log` should also appear, containing the time, temperature, energy, etc. of each step. You can use the python file provided to visualise these properties as a function of time. Running this simulation should require no more than a minute or so of computational time, though you are free to increase the number of steps if you would like to acquire more statistics. 
