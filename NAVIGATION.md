@@ -18,6 +18,8 @@ By the end of this tutorial you should:
 - Know how to run simple MD powered by MACE potentials.
 - Integrate MACE with PLUMED to enable the accurate determination of free energy surfaces. 
 
+The data and files needed to run the excercises of this tutorial can be found on Github. **Clone the following directory to your local machine**: https://github.com/water-ice-group/plumed_tutorial_mace.git
+
 This tutorial is organized as follows:
 
 ```mermaid
@@ -30,5 +32,3 @@ flowchart TD
   click C "03_freeMD.md" "Run simple MD using MACE and ASE."
   click D "04_metaD.md" "Perform metadynamics using MACE to examine conformational stability."
 ```
-
-The data and files needed to run the excercises of this tutorial can be found on Github. **Clone the following directory to your local machine**: https://github.com/water-ice-group/plumed_tutorial_mace.git
