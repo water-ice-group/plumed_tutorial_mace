@@ -31,4 +31,4 @@ flowchart TD
   click D "04_metaD.md" "Perform metadynamics using MACE to examine conformational stability."
 ```
 
-The data and files needed to run the excercises of this tutorial can be found on Github. Clone the following directory to your local machine: git@github.com:water-ice-group/plumed_tutorial_mace.git 
+The data and files needed to run the excercises of this tutorial can be found on Github. Clone the following directory to your local machine: https://github.com/water-ice-group/plumed_tutorial_mace.git
