@@ -1,6 +1,6 @@
 # Interfacing MACE with Enhanced Sampling
 
-In this tutorial, we will learn how to link up the recently developed MACE potential with PLUMED to perform enhanced sampling simulations in the form of two-dimensional metadynamics. Our test system is a molecule of gaseous carbonic acid (H2CO3). This tutorial will probe the various conformations carbonic acid can adopt and establish which are the most stable. 
+In this tutorial, we will learn how to link up the recently developed MACE potential with PLUMED to perform enhanced sampling simulations in the form of two-dimensional metadynamics. Our test system will be a molecule of gaseous carbonic acid (H2CO3). This tutorial will probe the various conformations carbonic acid can adopt and establish which are the most stable. 
 
 Carbonic acid is important for carbon dioxide solvation chemistry, relating to processes like ocean acidification and the bicarbonate buffer system. The acid has two terminal OH groups that can either be in cis or trans orientation, giving rise to three conformers, cis-cis, cis-trans, and trans-trans as shown below.
 
