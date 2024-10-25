@@ -37,8 +37,13 @@ We can use `COLVAR` to build up a picture of what is happening as the metadynami
 
 We have set the number of steps in this simulation to be 100,000. This should take around 1-2 hours to complete depending on your hardware. You can speed up computation by switching `device='cpu'` to `'cuda'`, if GPU computation is available. Feel free to increase the number of steps in this simulation to improve the convergence of our profile and obtain more accurate free energies. 
 
-Following the completion of the simulation, we can look to extract a potential energy surface for the conformational changes of carbonic acid. Copy `HILLS` to a new directory. Make sure to source your installed version of PLUMED and type `plumed sum_hills --hills HILLS --kt 0.02585`. This will add up the deposited gaussians and output the potential energies in `fes.dat`. Use this file to plot the 2D energy surface for our molecule. We have provided scripts for you to do this, though we encourage you to try coding this yourself. You should see profile that looks something like this:
+Following the completion of the simulation, we can look to extract a potential energy surface for the conformational changes of carbonic acid. 
+1. Copy `HILLS` to a new directory.
+2. Source your installed version of PLUMED and type `plumed sum_hills --hills HILLS --kt 0.02585`. This will add up the deposited gaussians and output the potential energies in `fes.dat`.
+3. Use the data in `fes.dat` to plot the 2D energy surface for our molecule. We have provided scripts for you to do this, though we encourage you to try coding this yourself.
+
+You profile should resemble something like this:
 
 <img src="./img/conf_free_energy.png" alt="drawing" width="600"/>
 
-We can see four basins on this profile (if there are fewer than four on your profile, try running the simulations for longer). Are you able to identify which basin corresponds to which conformer? What is the most stable conformer? Can we provide a chemical rationale for these relative stabilities? 
+We can see four basins on this profile (if fewer, try running the simulations for longer). Are you able to identify which basin corresponds to which conformer? What is the most stable conformer? Can we provide a chemical rationale for these relative stabilities? 
