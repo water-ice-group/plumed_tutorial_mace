@@ -30,3 +30,5 @@ flowchart TD
   click C "03_freeMD.md" "Run simple MD using MACE and ASE."
   click D "04_metaD.md" "Perform metadynamics using MACE to examine conformational stability."
 ```
+
+The data and files needed to run the excercises of this tutorial can be found on Github. Clone the following directory to your local machine: git@github.com:water-ice-group/plumed_tutorial_mace.git 
