@@ -2,6 +2,8 @@
 
 Having now set up your MACE-ASE-PLUMED environment, let's start running some MD. 
 
+The files needed to complete this part of the tutorial are located in the `resources` subdirectory (https://github.com/water-ice-group/plumed_tutorial_mace.git). 
+
 Open the file `run.py`. You should see the following code:
 
 ```python
