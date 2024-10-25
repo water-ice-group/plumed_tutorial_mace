@@ -4,7 +4,7 @@ Now that we've run some simple MD, let us move on to the main task for this tuto
 
 ---
 
-Like in the previous task, we have a configuration file `init.xyz` and our ase file `mace.py`. Looking at the latter, you should see some noticeable changes to the code. The code below gives the PLUMED input needed to perform our enhanced sampling:
+Like in the previous task, we have a configuration file `init.xyz` and our ase file `run.py`. Looking at the latter, you should see some noticeable changes to the code. The code below gives the PLUMED input needed to perform our enhanced sampling:
 
 ```python
 setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY=eV",
@@ -31,7 +31,7 @@ init_conf.calc = Plumed(calc=calculator,
 ```
 where we define the MACE calculator, PLUMED input, the starting configuration, timestep, and *kT*. 
 
-Run the simulation using `python mace.py`. Notice that two additional files will now be output alongside a trajectory and a log file. The `COLVAR` file gives details on the values of the two collective variable at each timestep. `HILLS` records the gaussians deposited at each step; this will be important for reconstructing the potential energy surface later. 
+Run the simulation using `python run.py`. Notice that two additional files will now be output alongside a trajectory and a log file. The `COLVAR` file gives details on the values of the two collective variable at each timestep. `HILLS` records the gaussians deposited at each step; this will be important for reconstructing the potential energy surface later. 
 
 We can use `COLVAR` to build up a picture of what is happening as the metadynamics proceeds. We encourage you to plot both $\phi$ and $\theta$ as a function of time to understand which states the molecule occupies and their relative proportions. How many transitions have there been between CC, CT, and TT?
 
