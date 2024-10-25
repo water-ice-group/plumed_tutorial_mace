@@ -6,7 +6,7 @@ Before doing anything, ensure that you have installed and compiled a working ver
 Setting up the MACE-ASE-PLUMED interface is most easily achieved by using `conda` to create a new virtual environment. Follow the instructions below to create this environment and install the necessary modules for running our calculations. Ensure that you have `python3.9` or higher. 
 
 ```python
-conda create env -n plumed_mace
+conda create -n plumed_mace
 conda activate plumed_mace
 conda install pip
 
