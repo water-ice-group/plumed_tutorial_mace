@@ -1,4 +1,4 @@
-# Using MACE to run metadynamics over two collective variables
+# Using MACE to run Metadynamics over Two Collective Variables
 
 Now that we've run some simple MD, let us move on to the main task for this tutorial. In this section, we will be using PLUMED to drive a conformational change in our carbonic acid molecule. This molecule exists in three main conformations: cis-cis (CC), cis-trans (CT), and trans-trans (TT). It's up to you to determine which of these conformers is most stable, and which is least stable. 
 
