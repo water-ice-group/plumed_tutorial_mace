@@ -18,8 +18,7 @@ Converting this to PLUMED format:
 UNITS LENGTH=A TIME=ps ENERGY=eV
 t1: [TORSION](https://www.plumed.org/doc-master/user-doc/html/_t_o_r_s_i_o_n.html) ATOMS=1,6,4,5
 t2: [TORSION](https://www.plumed.org/doc-master/user-doc/html/_t_o_r_s_i_o_n.html) ATOMS=2,3,4,5
-mtd: [METAD](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html) ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.013 PACE=100 FILE=HILLS
-BIASFACTOR=5 TEMP=300
+mtd: [METAD](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html) ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.013 PACE=100 FILE=HILLS BIASFACTOR=5 TEMP=300
 PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR
 ```
 
