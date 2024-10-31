@@ -1,4 +1,4 @@
-# Interfacing MACE with Enhanced Sampling
+# Exploring Free Energy Surfaces with MACE-PLUMED Metadynamics
 
 In this tutorial, we will learn how to link up the recently developed MACE potential with PLUMED to perform enhanced sampling simulations in the form of two-dimensional metadynamics. Our test system will be a molecule of gaseous carbonic acid (H2CO3). This tutorial will probe the various conformations carbonic acid can adopt and establish which are the most stable. 
 
