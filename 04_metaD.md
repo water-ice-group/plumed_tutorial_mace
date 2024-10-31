@@ -9,8 +9,7 @@ The files needed to complete this part of the tutorial are located in the `resou
 Like in the previous task, we have a configuration file `init.xyz` and our ase file `run.py`. Looking at the latter, you should see some noticeable changes to the code. The code below gives the PLUMED input needed to perform our enhanced sampling:
 
 ```python
-setup = [f"UNITS
-         ... FILE=COLVAR"]
+setup = [f"UNITS ... FILE=COLVAR"]
 ```
 
 Converting from python to PLUMED format:
