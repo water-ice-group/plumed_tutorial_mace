@@ -9,13 +9,20 @@ The files needed to complete this part of the tutorial are located in the `resou
 Like in the previous task, we have a configuration file `init.xyz` and our ase file `run.py`. Looking at the latter, you should see some noticeable changes to the code. The code below gives the PLUMED input needed to perform our enhanced sampling:
 
 ```python
-setup = [f"UNITS LENGTH=A TIME={1/ps} ENERGY=eV",
-          "t1: TORSION ATOMS=1,6,4,5",
-          "t2: TORSION ATOMS=2,3,4,5",
-          "mtd: METAD ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.013 PACE=100 FILE=HILLS" +
-                " BIASFACTOR=5 TEMP=300",
-          "PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR"]
+setup = [f"UNITS ... FILE=COLVAR"]
 ```
+
+Converting this to PLUMED format:
+
+```plumed
+UNITS LENGTH=A TIME=ps ENERGY=eV
+t1: [TORSION](https://www.plumed.org/doc-master/user-doc/html/_t_o_r_s_i_o_n.html) ATOMS=1,6,4,5
+t2: [TORSION](https://www.plumed.org/doc-master/user-doc/html/_t_o_r_s_i_o_n.html) ATOMS=2,3,4,5
+mtd: [METAD](https://www.plumed.org/doc-master/user-doc/html/_m_e_t_a_d.html) ARG=t1,t2 SIGMA=0.25,0.25 HEIGHT=0.013 PACE=100 FILE=HILLS
+BIASFACTOR=5 TEMP=300
+PRINT ARG=t1.*,t2.*,mtd.* STRIDE=100 FILE=COLVAR
+```
+
 
 Line 1 gives the units used by PLUMED. Lines 2 and 3 define the collective variables (torsion) that we will use to probe the conformation change. Line 4 is used to define the parameters used in running metadynamics, including gaussian heights, widths, and the rate at which they are deposited. Line 5 tells us to print the important collective variable information. 
 
