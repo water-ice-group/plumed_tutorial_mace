@@ -24,8 +24,8 @@ This tutorial is organized as follows:
 
 ```mermaid
 flowchart TD
-  PRE[Metadynamics] ==> A[Introduction to MACE]
-  A ==> B[Setting up your environment];
+  PRE[Metadynamics] ==> B[Setting up your environment]
+  A[Introduction to MACE] ==> B[Setting up your environment];
   B ==> C[Running Free MD]
   C ==> D[Metadynamics];
   click PRE "https://www.plumed-tutorials.org/lessons/21/004/data/NAVIGATION.html" "Masterclass on Metadynamics"
