@@ -12,7 +12,7 @@ Like in the previous task, we have a configuration file `init.xyz` and our ase f
 setup = [f"UNITS ... FILE=COLVAR"]
 ```
 
-Converting this to PLUMED format:
+Converting from python to PLUMED format:
 
 ```plumed
 UNITS LENGTH=A TIME=ps ENERGY=eV
