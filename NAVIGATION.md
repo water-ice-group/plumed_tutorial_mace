@@ -24,7 +24,7 @@ This tutorial is organized as follows:
 
 ```mermaid
 flowchart TD
-  PRE[Metadynamics] ==> A [Introduction to MACE]
+  PRE[Metadynamics] ==> A[Introduction to MACE]
   A ==> B[Setting up your environment];
   B ==> C[Running Free MD]
   C ==> D[Metadynamics];
