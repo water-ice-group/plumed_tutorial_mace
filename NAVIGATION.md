@@ -27,7 +27,7 @@ flowchart TD
   PRE[Metadynamics] ==> B[Setting up your environment]
   A[Introduction to MACE] ==> B[Setting up your environment];
   B ==> C[Running Free MD]
-  C ==> D[Metadynamics];
+  C ==> D[Running Metadynamics];
   click PRE "metad" "Masterclass on Metadynamics"
   click A "01_mace_intro.md" "Learn about the MACE potential for performing accurate and efficient molecular dynamics simulations"
   click B "02_setting_up_env.md" "Understand how to set up the MACE-ASE-PLUMED interface."
