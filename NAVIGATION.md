@@ -28,7 +28,7 @@ flowchart TD
   A[Introduction to MACE] ==> B[Setting up your environment];
   B ==> C[Running Free MD]
   C ==> D[Metadynamics];
-  click PRE "https://www.plumed-tutorials.org/lessons/21/004/data/NAVIGATION.html" "Masterclass on Metadynamics"
+  click PRE "metad" "Masterclass on Metadynamics"
   click A "01_mace_intro.md" "Learn about the MACE potential for performing accurate and efficient molecular dynamics simulations"
   click B "02_setting_up_env.md" "Understand how to set up the MACE-ASE-PLUMED interface."
   click C "03_freeMD.md" "Run simple MD using MACE and ASE."
