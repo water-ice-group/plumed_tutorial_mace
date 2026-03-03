@@ -6,17 +6,20 @@ Before proceeding, ensure that you have installed and compiled a working version
 Setting up the MACE-ASE-PLUMED interface is most easily achieved by using `conda` to create a new virtual environment. Follow the instructions below to create this environment and install the necessary modules for running our calculations. Ensure that you have `python3.9` or higher. 
 
 ```python
-conda create -n plumed_mace
-conda activate plumed_mace
-conda install pip
+# 1. Create a clean environment 
+conda create -n plumed_mace_legacy python=3.9 
 
-# Install ase
-pip install --upgrade ase
+# 2. Activate it
+conda activate plumed_mace_legacy
 
-# Install the python wrap of ase
-conda install -c conda-forge py-plumed
+# 3. Install py-plumed and a compatible NumPy version first
+# We force numpy<2 to avoid the scalar conversion errors
+conda install -c conda-forge py-plumed "numpy<2.0" 
 
-# Install MACE
+# 4. Install ASE
+pip install ase
+
+# 5. Install MACE
 pip install mace-torch
 ```
 

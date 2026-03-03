@@ -36,7 +36,6 @@ def write_frame():
             dyn.atoms.write('traj.xyz', append=True)
 dyn.attach(write_frame, interval=500)
 dyn.attach(MDLogger(dyn, init_conf, 'md.log', header=True, stress=False,
-                           peratom=True, mode="a"), interval=1)
-
+                    peratom=True, mode="a"), interval=1)
 dyn.run(1000000)
 print("MD finished! Congratulations!")
