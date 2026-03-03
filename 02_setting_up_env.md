@@ -7,10 +7,10 @@ Setting up the MACE-ASE-PLUMED interface is most easily achieved by using `conda
 
 ```python
 # 1. Create a clean environment 
-conda create -n plumed_mace_legacy python=3.9 
+conda create -n plumed_mace python=3.9 
 
 # 2. Activate it
-conda activate plumed_mace_legacy
+conda activate plumed_mace
 
 # 3. Install py-plumed and a compatible NumPy version first
 conda install -c conda-forge py-plumed "numpy<2.0" 
