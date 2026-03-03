@@ -13,7 +13,6 @@ conda create -n plumed_mace_legacy python=3.9
 conda activate plumed_mace_legacy
 
 # 3. Install py-plumed and a compatible NumPy version first
-# We force numpy<2 to avoid the scalar conversion errors
 conda install -c conda-forge py-plumed "numpy<2.0" 
 
 # 4. Install ASE
